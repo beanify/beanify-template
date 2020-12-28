@@ -7,10 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./app.js",
-    "lint": "npm run lint:standard && npm run lint:typescript",
+    "lint": "npm run lint:standard",
     "lint:fix": "standard --fix",
-    "lint:standard": "standard --verbose | snazzy",
-    "lint:typescript": "eslint -c types/.eslintrc types/**/*.d.ts"
+    "lint:standard": "standard --verbose | snazzy"
   },
   "devDependencies": {
     "eslint": "^7.15.0",
@@ -24,9 +23,6 @@
     "snazzy": "^9.0.0",
     "standard": "^16.0.3"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "dependencies": {
     "beanify": "^3.0.7",
     "beanify-ajv": "3.0.2",
@@ -34,5 +30,6 @@
     "beanify-env": "^3.0.2",
     "beanify-plugin": "^3.0.2",
     "beanify-url": "^3.0.2"
-  }
+  },
+  "pre-commit": ["lint"]
 }
