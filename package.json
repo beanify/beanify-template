@@ -28,6 +28,7 @@
     "beanify-ajv": "3.0.2",
     "beanify-autoload": "^3.0.3",
     "beanify-env": "^3.0.2",
+    "beanify-markdown": "^1.0.0",
     "beanify-plugin": "^3.0.2",
     "beanify-url": "^3.0.2"
   },
@@ -35,5 +36,7 @@
     "type": "git",
     "url": "git+https://github.com/beanify/beanify-template.git"
   },
-  "pre-commit": ["lint"]
+  "pre-commit": [
+    "lint"
+  ]
 }
