@@ -31,5 +31,9 @@
     "beanify-plugin": "^3.0.2",
     "beanify-url": "^3.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beanify/beanify-template.git"
+  },
   "pre-commit": ["lint"]
 }
