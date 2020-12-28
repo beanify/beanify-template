@@ -1,0 +1,38 @@
+{
+  "name": "beanify-template",
+  "version": "3.0.0",
+  "description": "beanify template project",
+  "main": "app.js",
+  "author": "beanjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./app.js",
+    "lint": "npm run lint:standard && npm run lint:typescript",
+    "lint:fix": "standard --fix",
+    "lint:standard": "standard --verbose | snazzy",
+    "lint:typescript": "eslint -c types/.eslintrc types/**/*.d.ts"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "pino-pretty": "^3.5.0",
+    "pre-commit": "^1.2.2",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "beanify": "^3.0.7",
+    "beanify-ajv": "3.0.2",
+    "beanify-autoload": "^3.0.3",
+    "beanify-env": "^3.0.2",
+    "beanify-plugin": "^3.0.2",
+    "beanify-url": "^3.0.2"
+  }
+}
